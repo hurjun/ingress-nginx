@@ -16,7 +16,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/mast
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/docs/examples/customization/custom-headers/configmap.yaml
 ```
 
-The nginx ingress controller will read the `ingress-nginx/ingress-nginx-controller` ConfigMap, find the `proxy-set-headers` key, read HTTP headers from the `ingress-nginx/custom-headers` ConfigMap, and include those HTTP headers in all requests flowing from nginx to the backends.
+The nginx ingress controller will be read the `ingress-nginx/ingress-nginx-controller` ConfigMap, find the `proxy-set-headers` key, read HTTP headers from the `ingress-nginx/custom-headers` ConfigMap, and include those HTTP headers in all requests flowing from nginx to the backends.
 
 ## Test
 
